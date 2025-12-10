@@ -1,3 +1,4 @@
+import Eg from "../assets/images/Eg.png";
 import React, { useState } from "react";
 import { useAppContext } from "../context/AppContext";
 
@@ -12,7 +13,7 @@ export default function Header({ currentPage, setCurrentPage }) {
       <span className="logo-icon">
   <img 
     style={{ height: '50px', width: '50px' ,borderRadius: '25px' }} 
-    src=".\src\assets\images\Eg.png"
+    src={Eg}
     alt="Logo"
   />
 </span>

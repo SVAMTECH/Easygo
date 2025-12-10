@@ -1,31 +1,41 @@
-
+import slide2 from "../assets/images/slide2.jpg";
+import slide3 from "../assets/images/slide3.jpg";
+import slide4 from "../assets/images/slide4.jpg";
+import cmp from "../assets/images/cmp.jpg";
 import React from "react";
 export default function Home({ setCurrentPage }) {
   return (
     <>
-    <div className="carousel-section">
-      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img  style={{height:"390px"}}src=".\src\assets\images\slide2.jpg" class="d-block w-100" alt="..."/>
+<div className="carousel-section">
+  <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
+    <div className="carousel-inner">
+
+      <div className="carousel-item active">
+        <img style={{ height: "390px" }} src={slide2} className="d-block w-100" alt="Slide 1" />
+      </div>
+
+      <div className="carousel-item">
+        <img style={{ height: "390px" }} src={slide3} className="d-block w-100" alt="Slide 2" />
+      </div>
+
+      <div className="carousel-item">
+        <img style={{ height: "390px" }} src={slide4} className="d-block w-100" alt="Slide 3" />
+      </div>
+
     </div>
-    <div class="carousel-item">
-      <img style={{height:"390px"}} src=" .\src\assets\images\slide3.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img  style={{height:"390px"}}src=".\src\assets\images\slide4.jpg" class="d-block w-100" alt="..."/>
-    </div>
+
+    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+    </button>
+
+    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-    </div>
+
 
       <div className="home-container">
       
@@ -41,7 +51,7 @@ export default function Home({ setCurrentPage }) {
             </div>
           </div>
           <div className="hero-img">
-            <img style={{height:"250px"}}src=".\src\assets\images\cmp.jpg" alt="car" />
+            <img style={{height:"250px"}}src={cmp} alt="car" />
           </div>
         </section>
 

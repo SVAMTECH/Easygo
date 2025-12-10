@@ -1,6 +1,5 @@
-
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import { AppProvider } from "./context/AppContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,7 +12,6 @@ import AddVehicle from "./pages/AddVehicle";
 import Dashboard from "./pages/Dashboard";
 import Payment from "./pages/Payment";
 import Contact from "./pages/Contact";
-
 
 function AppRoutes() {
   const navigate = useNavigate();
@@ -36,14 +34,11 @@ function AppRoutes() {
 
   return (
     <div className="app">
-
       <Header setCurrentPage={setCurrentPage} />
 
       <main className="main-content">
         <Routes>
-     
           <Route path="/" element={<Navigate to="/home" replace />} />
-
 
           <Route path="/home" element={<Home setCurrentPage={setCurrentPage} />} />
           <Route path="/login" element={<Login setCurrentPage={setCurrentPage} />} />
@@ -53,7 +48,6 @@ function AppRoutes() {
           <Route path="/dashboard" element={<Dashboard setCurrentPage={setCurrentPage} />} />
           <Route path="/payment" element={<Payment setCurrentPage={setCurrentPage} />} />
           <Route path="/contact" element={<Contact setCurrentPage={setCurrentPage} />} />
-
 
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
@@ -67,12 +61,9 @@ function AppRoutes() {
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <AppRoutes />
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }
-
-
-
