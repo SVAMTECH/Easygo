@@ -1,0 +1,154 @@
+/* MAIN CONTAINER */
+.coursel-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  
+
+}
+.home-container {
+  width: 100%;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #2d62ff, #4a8bff);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons button {
+  padding: 12px 28px;
+  border: none;
+  background: #fff;
+  color: #2d62ff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.outline-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero-img img {
+  width: 350px;
+  max-width: 100%;
+}
+
+/* FEATURES SECTION */
+.features {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.feature-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* POPULAR VEHICLES */
+.popular {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.popular-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vehicle-cardh {
+  width: 230px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.vehicle-cardh img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.vehicle-cardh h3 {
+  margin: 10px 0;
+}
+
+/* CTA */
+.cta {
+  background: #2d62ff;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.cta button {
+  padding: 12px 30px;
+  background: #fff;
+  color: #2d62ff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-buttons {
+    margin-bottom: 20px;
+  }
+}

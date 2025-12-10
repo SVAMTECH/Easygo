@@ -1,0 +1,287 @@
+
+
+/* Base Mobile Styles */
+.contact-page {
+  padding: 12px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contact-page h1 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* Company Card */
+.company-card {
+  padding: 14px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(20, 20, 40, 0.06);
+}
+
+.company-card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.company-card p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.company-card strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.company-card a {
+  color: #0b66ff;
+  text-decoration: none;
+  transition: color 0.3s;
+  word-break: break-word;
+}
+
+.company-card a:hover {
+  color: #0952cc;
+  text-decoration: underline;
+}
+
+.company-card hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Form Card */
+.form-card {
+  padding: 14px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(20, 20, 40, 0.06);
+}
+
+.form-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Status Messages */
+.status-message {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.status-success {
+  background: #e6ffef;
+  color: #026a36;
+  border: 1px solid #b7f2c9;
+}
+
+.status-error {
+  background: #fff0f0;
+  color: #a12a2a;
+  border: 1px solid #f3c2c2;
+}
+
+/* Form Elements */
+.label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px; /* Prevents zoom on iOS */
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  background: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0b66ff;
+  box-shadow: 0 0 0 3px rgba(11, 102, 255, 0.1);
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+textarea.input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+select.input {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.field-error {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #d32f2f;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  margin-bottom: 8px;
+  touch-action: manipulation;
+}
+
+.btn-primary {
+  background: #0b66ff;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background: #0952cc;
+  box-shadow: 0 4px 12px rgba(11, 102, 255, 0.3);
+}
+
+.btn-secondary {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #d0d0d0;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background: #e8e8e8;
+}
+
+/* Help Text */
+.contact-page > div:last-child {
+  margin-top: 18px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 0 4px;
+}
+
+/* Tablet and Up (768px+) */
+@media (min-width: 768px) {
+  .contact-page {
+    padding: 16px;
+  }
+
+  .contact-page h1 {
+    font-size: 1.75rem;
+  }
+
+  .company-card,
+  .form-card {
+    padding: 16px;
+  }
+
+  .company-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    width: auto;
+    min-width: 120px;
+  }
+
+  .input {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  textarea.input {
+    min-height: 80px;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .contact-page {
+    padding: 24px;
+  }
+
+  .contact-page h1 {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .company-card,
+  .form-card {
+    padding: 20px;
+  }
+
+  .company-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+}
+
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  .contact-grid {
+    gap: 32px;
+  }
+
+  .company-card,
+  .form-card {
+    padding: 24px;
+  }
+}
